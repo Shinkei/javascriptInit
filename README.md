@@ -43,7 +43,22 @@ It is an easy way to run the application in the development process to test and 
 ####Share Work In Progress
 The ability to share the progress of the application is very important to make demos and test features, even let the client interact with a previous version without the need of deployment, here are some alternatives:
 
+####Alternatives
 - localtunnel
 - ngrok
 - surge
 - now
+
+##Automation
+It is very important for the developers due to that there are many commands ans tools, so automating a process can save time and prevent errors.
+
+####Alternatives
+- Grunt
+- Gulp
+- npm
+
+npm script is a great choice, because you jave the power of javascript and all the packages from npm, to use them just add some scripts in the package.json file
+
+####NpmRunAll
+is a package that allows to run different commands at the same time
+in parallel
