@@ -62,3 +62,17 @@ npm script is a great choice, because you jave the power of javascript and all t
 ####NpmRunAll
 is a package that allows to run different commands at the same time
 in parallel
+
+##Transpiling
+It is the way to code with one version of javascript or a related language and convert the code to a javascript version that all the browsers understand
+
+Note: ES2016 has only 2 new features, exponent operator and array.prototype.includes
+
+####Alternatives
+https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS
+- Babel
+- TypeScript
+- Elm 
+
+Babel and Typescript are are huge alternatives, typescript offers datatype validation and babel offers new features from the new versions od ESx.
+It is recomended to use the .babelrc file
