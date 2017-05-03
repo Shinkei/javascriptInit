@@ -81,12 +81,25 @@ It is recomended to use the .babelrc file
 It is the way for the applocation to organize and manage the source files like js and css even images and so on and put it all in a file for the application to load faster and safer.
 
 ####Alternatives
+- RequireJS
 - Browserify
 - Webpack
 - Rollup
 - JSPM
 
-####Spurcemaps
+##Bundle
+It's the way to use javascript modules and create a final file that us capable to run in a browser, and even have different files that are together related that will make the app run in the browser.
+
+####Module formats
+- IIFE
+- AMD
+- CommonJS
+- UMD
+- ES6 Modules
+
+ES2015 Modules should be the one to select because it is the standard
+
+####Sourcemaps
 It is a feature that allows the developer to see the sourcecode (only when the developer tools is apened)of an application which sources have been minified and uglified and in this case put in a bundle with webpack
 
 ###Linting
@@ -96,3 +109,7 @@ Is the way to catch error and typos at the moment of coding or before building t
 - JSLint
 - JSHint
 - ESLint (eslint-watch: can check the code after save)
+
+Tree shaking is important because it eliminates code that is not used
+So Webpack2 is a good choice.
+
