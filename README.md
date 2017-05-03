@@ -76,3 +76,15 @@ https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to
 
 Babel and Typescript are are huge alternatives, typescript offers datatype validation and babel offers new features from the new versions od ESx.
 It is recomended to use the .babelrc file
+
+##Bundling
+It is the way for the applocation to organize and manage the source files like js and css even images and so on and put it all in a file for the application to load faster and safer.
+
+####Alternatives
+- Browserify
+- Webpack
+- Rollup
+- JSPM
+
+####Spurcemaps
+It is a feature that allows the developer to see the sourcecode (only when the developer tools is apened)of an application which sources have been minified and uglified and in this case put in a bundle with webpack
