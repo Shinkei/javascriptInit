@@ -88,3 +88,11 @@ It is the way for the applocation to organize and manage the source files like j
 
 ####Spurcemaps
 It is a feature that allows the developer to see the sourcecode (only when the developer tools is apened)of an application which sources have been minified and uglified and in this case put in a bundle with webpack
+
+###Linting
+Is the way to catch error and typos at the moment of coding or before building the project, also follow the code standars for the language and the project. Enforce consistency and avoid mistakes
+
+####Alternatives
+- JSLint
+- JSHint
+- ESLint (eslint-watch: can check the code after save)
