@@ -12,8 +12,8 @@ import {schema} from './mockDataSchema.js';
 import fs from 'fs';
 import chalk from 'chalk';
 
-jsf(schema).then(function(result) {
-    const json = JSON.stringify(result);
+
+    const json = JSON.stringify(jsf(schema));
     fs.writeFile("./src/api/db.json", json, (err) => {
         if(err){
             return console.log(chalk.red(err));
@@ -22,5 +22,5 @@ jsf(schema).then(function(result) {
             console.log(chalk.green("Mock data generated."))
         }
     });
-});
+
 

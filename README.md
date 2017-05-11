@@ -199,3 +199,15 @@ axios({
 * [x] JSON Server
 * [ ] api-mock
 * [x] JSON Schema Faker
+
+## Production Build
+A production build is an optimizartion build of the code where the buldle is nimified and uglified, sometimes it is useful to add sourcemaps to debug, dynamicHTML and Cache bustings, bundle splitting and error loging
+
+### Minitication and Uglification
+Shortens variable and function names
+removes comments
+removes whitespaces and new lines
+Dead code elimination / tree shaking
+
+### Sourcemaps
+debug with minified and Uglified bundle
