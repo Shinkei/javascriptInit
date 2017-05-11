@@ -4,17 +4,19 @@
   "description": "Bootstrap with all you need to create a javascript project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"tests/**/*.test.js\"",
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check open:src lint:watch test:watch",
+    "start": "npm-run-all --parallel security-check open:src lint:watch test:watch start-mockapi",
     "open:src": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"tests/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "generate-mock-data": "babel-node buildScripts/generateMockData",
+    "prestart-mockapi": "npm run generate-mock-data",
+    "start-mockapi": "json-server --watch src/api/db.json --port 3001"
   },
   "repository": {
     "type": "git",
@@ -49,6 +51,7 @@
     "express": "^4.15.2",
     "html-webpack-plugin": "^2.28.0",
     "jsdom": "^9.12.0",
+    "json-schema-faker": "^0.5.0-rc1",
     "localtunnel": "^1.8.2",
     "mocha": "^3.2.0",
     "nock": "^9.0.11",
@@ -60,6 +63,8 @@
     "webpack": "^2.3.2",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.18.0",
-    "webpack-md5-hash": "0.0.5"
+    "webpack-md5-hash": "0.0.5",
+    "whatwg-fetch": "^2.0.3",
+    "json-server": "^0.10.0"
   }
 }

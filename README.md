@@ -154,3 +154,48 @@ Continuous integration is like a breath of fresh air for developers, because aut
 * [ ] SnapCI
 
 > Check www.travis-ci.com 
+
+## HTTP Calls
+Using this protocol to comunicate with other aplication and expose APIs to be used by others
+
+### Alternatives
+* [ ] http node package (Node)
+* [x] request (Node)
+* [ ] XMLHttpRequest (Browser)
+* [ ] JQuery (Browser)
+* [ ] Angular - React etc (Browser) 
+* [x] Fetch (Browser)
+* [x] isomorphic-fetch (Node & Browser)
+* [x] xhr (Node & Browser)
+* [x] Super Agent (Node & Browser)
+* [x] Axios (Node & Browser)
+
+### Fetch
+```
+var request = new Request('http://your-api.com/user', {
+    method: 'GET',
+    mode: 'cors',
+    headers: new Header({
+        'Content-Type': 'text/html; Charset=UTF-8'
+    });
+});
+
+fetch(request).then(onSuccess, onError);
+```
+
+### Axios
+```
+axios({
+    url: 'http://your-api.com/user',
+    method: 'post',
+    headers: {
+        'Content-Type': 'text/html; Charset=UTF-8',
+        data: text
+    }
+}).then(onSuccess, onError);
+```
+### Mock HTTP
+* [ ] Nock
+* [x] JSON Server
+* [ ] api-mock
+* [x] JSON Schema Faker
