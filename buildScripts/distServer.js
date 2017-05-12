@@ -7,7 +7,7 @@ import compression from 'compression';
 const port = 3000;
 const app = express();
 
-app.user(compression());
+app.use(compression());
 /* eslint-disable no-console*/
 app.use(express.static('dist'));
 

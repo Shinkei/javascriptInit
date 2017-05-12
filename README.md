@@ -211,3 +211,13 @@ Dead code elimination / tree shaking
 
 ### Sourcemaps
 debug with minified and Uglified bundle
+
+## Logging
+Logging allows to se the errors or warning that could happen after the application is deployed, helpping to find and solve errors
+
+### Alternatives
+* [ ] TrackJS
+* [x] Sentry
+* [x] Rollbar
+* [ ] New Relic
+* [ ] Raygun
