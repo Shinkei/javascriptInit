@@ -221,3 +221,21 @@ Logging allows to se the errors or warning that could happen after the applicati
 * [x] Rollbar
 * [ ] New Relic
 * [ ] Raygun
+
+## Cloud Hosting
+Cloud hosting is one of the bug advantages that provides the cloud and there is a bunch of options that allows us to deploy our application on production and let te internet use it, there are some options for application and other for static files only.
+
+### Alternatives
+* [ ] Amazon Web Services
+* [ ] Microsoft Azure
+* [x] Heroku
+* [ ] Firebase
+* [ ] Google Cloud Platform
+* [ ] Netrlify
+* [x] Github
+* [x] Surge
+
+## Inspiration
+- andrewhfarmer.com/starter-project
+- github.com/gianarb/awesome-angularjs
+- key words (Boilerplate, Seed, Starter Proyect, Development Environment, Starter Kit)
